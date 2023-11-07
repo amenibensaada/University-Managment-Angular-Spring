@@ -12,6 +12,13 @@ import { mockApiServices } from 'app/mock-api';
 import { LayoutModule } from 'app/layout/layout.module';
 import { AppComponent } from 'app/app.component';
 import { appRoutes } from 'app/app.routing';
+import { BlocComponent } from './app/features/bloc/bloc.component';
+import { BlocComponentComponent } from './features/Bloc/bloc-component/bloc-component.component';
+import { ChambreComponentComponent } from './features/Chambre/chambre-component/chambre-component.component';
+import { EtudiantComponentComponent } from './features/Etudiant/etudiant-component/etudiant-component.component';
+import { FoyerComponentComponent } from './features/Foyer/foyer-component/foyer-component.component';
+import { ReservationComponentComponent } from './features/Reservation/reservation-component/reservation-component.component';
+import { UniversiteComponentComponent } from './features/Universite/universite-component/universite-component.component';
 
 const routerConfig: ExtraOptions = {
     preloadingStrategy       : PreloadAllModules,
@@ -20,7 +27,14 @@ const routerConfig: ExtraOptions = {
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        BlocComponent,
+        BlocComponentComponent,
+        ChambreComponentComponent,
+        EtudiantComponentComponent,
+        FoyerComponentComponent,
+        ReservationComponentComponent,
+        UniversiteComponentComponent
     ],
     imports     : [
         BrowserModule,
